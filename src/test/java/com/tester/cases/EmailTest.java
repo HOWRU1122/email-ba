@@ -1,27 +1,21 @@
 package com.tester.cases;
 
 
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 import com.tester.dao.TestResultDao;
 import com.tester.utils.DateUtils;
 import com.tester.utils.OhMyEmail;
 
-import org.apache.ibatis.jdbc.Null;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.security.GeneralSecurityException;
-import java.sql.ClientInfoStatus;
-import java.text.DecimalFormat;
 import java.util.*;
 
 import static com.tester.utils.DateUtils.PATTERN_DAY;
-import static com.tester.utils.DateUtils.reduceDays;
 import static com.tester.utils.OhMyEmail.SMTP_QQ;
 
 
@@ -116,7 +110,7 @@ public class EmailTest {
         if (jddouble >= thirtythreshold  && jddouble <= fiftythreshold) {
             content.append("<tr style=\"font-size: 18px; color:#ff0000\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (jdMoMCount < fiftythreshold) {
+        else if (jdMoMCount > fiftythreshold) {
             content.append("<tr style=\"font-size: 28px; color:#ff0000\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
 
@@ -125,7 +119,7 @@ public class EmailTest {
         if (pdddouble >= thirtythreshold  && pdddouble <= fiftythreshold) {
             content.append("<tr style=\"font-size: 18px; color:#ff0000\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (pddMoMCount < fiftythreshold) {
+        else if (pddMoMCount > fiftythreshold) {
             content.append("<tr style=\"font-size: 28px; color:#ff0000\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
 
@@ -134,7 +128,7 @@ public class EmailTest {
         if (suningdouble >= thirtythreshold  && suningdouble <= fiftythreshold) {
             content.append("<tr style=\"font-size: 18px; color:#ff0000\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (suningMoMCount < fiftythreshold) {
+        else if (suningMoMCount > fiftythreshold) {
             content.append("<tr style=\"font-size: 28px; color:#ff0000\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
 
