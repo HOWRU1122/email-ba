@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.tester.cases.EmailTest" time="11.453" tests="4" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\ideaProctect\email\target\test-classes;D:\ideaProctect\email\target\classes;C:\userapp\apache-maven-3.5.4\repository\org\apache\httpcomponents\httpclient\4.5.9\httpclient-4.5.9.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\httpcomponents\httpcore\4.4.11\httpcore-4.4.11.jar;C:\userapp\apache-maven-3.5.4\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\userapp\apache-maven-3.5.4\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\userapp\apache-maven-3.5.4\repository\org\testng\testng\6.10\testng-6.10.jar;C:\userapp\apache-maven-3.5.4\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\userapp\apache-maven-3.5.4\repository\org\json\json\20170516\json-20170516.jar;C:\userapp\apache-maven-3.5.4\repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar;C:\userapp\apache-maven-3.5.4\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\junit\junit\4.12\junit-4.12.jar;C:\userapp\apache-maven-3.5.4\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\userapp\apache-maven-3.5.4\repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\userapp\apache-maven-3.5.4\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\userapp\apache-maven-3.5.4\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;C:\userapp\apache-maven-3.5.4\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\userapp\apache-maven-3.5.4\repository\com\aventstack\extentreports\3.0.6\extentreports-3.0.6.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\userapp\apache-maven-3.5.4\repository\com\alibaba\fastjson\1.2.46\fastjson-1.2.46.jar;C:\userapp\apache-maven-3.5.4\repository\org\projectlombok\lombok\1.16.22\lombok-1.16.22.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-web\2.0.2.RELEASE\spring-boot-starter-web-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter\2.0.2.RELEASE\spring-boot-starter-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot\2.0.2.RELEASE\spring-boot-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.2.RELEASE\spring-boot-autoconfigure-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-logging\2.0.2.RELEASE\spring-boot-starter-logging-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\userapp\apache-maven-3.5.4\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\userapp\apache-maven-3.5.4\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\userapp\apache-maven-3.5.4\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-json\2.0.2.RELEASE\spring-boot-starter-json-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\core\jackson-databind\2.9.5\jackson-databind-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\core\jackson-core\2.9.5\jackson-core-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.5\jackson-datatype-jdk8-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.5\jackson-datatype-jsr310-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.5\jackson-module-parameter-names-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.2.RELEASE\spring-boot-starter-tomcat-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.31\tomcat-embed-core-8.5.31.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.31\tomcat-embed-el-8.5.31.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.31\tomcat-embed-websocket-8.5.31.jar;C:\userapp\apache-maven-3.5.4\repository\org\hibernate\validator\hibernate-validator\6.0.9.Final\hibernate-validator-6.0.9.Final.jar;C:\userapp\apache-maven-3.5.4\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\userapp\apache-maven-3.5.4\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-web\5.0.6.RELEASE\spring-web-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-beans\5.0.6.RELEASE\spring-beans-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-webmvc\5.0.6.RELEASE\spring-webmvc-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-aop\5.0.6.RELEASE\spring-aop-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-context\5.0.6.RELEASE\spring-context-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-expression\5.0.6.RELEASE\spring-expression-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-swagger-ui\2.6.1\springfox-swagger-ui-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-spring-web\2.6.1\springfox-spring-web-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-swagger2\2.6.1\springfox-swagger2-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\swagger\swagger-annotations\1.5.10\swagger-annotations-1.5.10.jar;C:\userapp\apache-maven-3.5.4\repository\io\swagger\swagger-models\1.5.10\swagger-models-1.5.10.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-spi\2.6.1\springfox-spi-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-core\2.6.1\springfox-core-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-schema\2.6.1\springfox-schema-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-swagger-common\2.6.1\springfox-swagger-common-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\classmate\1.3.1\classmate-1.3.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\slf4j\slf4j-api\1.7.21\slf4j-api-1.7.21.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\mapstruct\mapstruct\1.0.0.Final\mapstruct-1.0.0.Final.jar;C:\userapp\apache-maven-3.5.4\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\2.0.0\mybatis-spring-boot-starter-2.0.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.8.RELEASE\spring-boot-starter-jdbc-2.0.8.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-jdbc\5.0.12.RELEASE\spring-jdbc-5.0.12.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-tx\5.0.12.RELEASE\spring-tx-5.0.12.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\2.0.0\mybatis-spring-boot-autoconfigure-2.0.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\mybatis\mybatis\3.5.0\mybatis-3.5.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\mybatis\mybatis-spring\2.0.0\mybatis-spring-2.0.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-test\2.0.2.RELEASE\spring-boot-starter-test-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-test\2.0.2.RELEASE\spring-boot-test-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.2.RELEASE\spring-boot-test-autoconfigure-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\userapp\apache-maven-3.5.4\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\userapp\apache-maven-3.5.4\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\userapp\apache-maven-3.5.4\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar;C:\userapp\apache-maven-3.5.4\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\userapp\apache-maven-3.5.4\repository\net\bytebuddy\byte-buddy-agent\1.7.9\byte-buddy-agent-1.7.9.jar;C:\userapp\apache-maven-3.5.4\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\userapp\apache-maven-3.5.4\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\userapp\apache-maven-3.5.4\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\userapp\apache-maven-3.5.4\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-core\5.0.6.RELEASE\spring-core-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-jcl\5.0.6.RELEASE\spring-jcl-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-test\5.0.6.RELEASE\spring-test-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\github\biezhi\oh-my-email\0.0.4\oh-my-email-0.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\userapp\apache-maven-3.5.4\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\瓜皮\AppData\Local\Temp\surefire5478065696638036247\surefirebooter463089991557937027.jar C:\Users\瓜皮\AppData\Local\Temp\surefire5478065696638036247 2020-03-10T14-50-30_588-jvmRun1 surefire7155362188421414540tmp surefire_0417202662963718365tmp"/>
+    <property name="surefire.test.class.path" value="D:\ideaProctect\email\target\test-classes;D:\ideaProctect\email\target\classes;C:\userapp\apache-maven-3.5.4\repository\org\apache\httpcomponents\httpclient\4.5.9\httpclient-4.5.9.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\httpcomponents\httpcore\4.4.11\httpcore-4.4.11.jar;C:\userapp\apache-maven-3.5.4\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\userapp\apache-maven-3.5.4\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\userapp\apache-maven-3.5.4\repository\org\testng\testng\6.10\testng-6.10.jar;C:\userapp\apache-maven-3.5.4\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\userapp\apache-maven-3.5.4\repository\org\json\json\20170516\json-20170516.jar;C:\userapp\apache-maven-3.5.4\repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar;C:\userapp\apache-maven-3.5.4\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\junit\junit\4.12\junit-4.12.jar;C:\userapp\apache-maven-3.5.4\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\userapp\apache-maven-3.5.4\repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\userapp\apache-maven-3.5.4\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\userapp\apache-maven-3.5.4\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;C:\userapp\apache-maven-3.5.4\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\userapp\apache-maven-3.5.4\repository\com\aventstack\extentreports\3.0.6\extentreports-3.0.6.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\userapp\apache-maven-3.5.4\repository\com\alibaba\fastjson\1.2.46\fastjson-1.2.46.jar;C:\userapp\apache-maven-3.5.4\repository\org\projectlombok\lombok\1.16.22\lombok-1.16.22.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-web\2.0.2.RELEASE\spring-boot-starter-web-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter\2.0.2.RELEASE\spring-boot-starter-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot\2.0.2.RELEASE\spring-boot-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.2.RELEASE\spring-boot-autoconfigure-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-logging\2.0.2.RELEASE\spring-boot-starter-logging-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\userapp\apache-maven-3.5.4\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\userapp\apache-maven-3.5.4\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\userapp\apache-maven-3.5.4\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-json\2.0.2.RELEASE\spring-boot-starter-json-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\core\jackson-databind\2.9.5\jackson-databind-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\core\jackson-core\2.9.5\jackson-core-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.5\jackson-datatype-jdk8-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.5\jackson-datatype-jsr310-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.5\jackson-module-parameter-names-2.9.5.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.2.RELEASE\spring-boot-starter-tomcat-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.31\tomcat-embed-core-8.5.31.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.31\tomcat-embed-el-8.5.31.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.31\tomcat-embed-websocket-8.5.31.jar;C:\userapp\apache-maven-3.5.4\repository\org\hibernate\validator\hibernate-validator\6.0.9.Final\hibernate-validator-6.0.9.Final.jar;C:\userapp\apache-maven-3.5.4\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\userapp\apache-maven-3.5.4\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-web\5.0.6.RELEASE\spring-web-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-beans\5.0.6.RELEASE\spring-beans-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-webmvc\5.0.6.RELEASE\spring-webmvc-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-aop\5.0.6.RELEASE\spring-aop-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-context\5.0.6.RELEASE\spring-context-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-expression\5.0.6.RELEASE\spring-expression-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-swagger-ui\2.6.1\springfox-swagger-ui-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-spring-web\2.6.1\springfox-spring-web-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-swagger2\2.6.1\springfox-swagger2-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\swagger\swagger-annotations\1.5.10\swagger-annotations-1.5.10.jar;C:\userapp\apache-maven-3.5.4\repository\io\swagger\swagger-models\1.5.10\swagger-models-1.5.10.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-spi\2.6.1\springfox-spi-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-core\2.6.1\springfox-core-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-schema\2.6.1\springfox-schema-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\springfox\springfox-swagger-common\2.6.1\springfox-swagger-common-2.6.1.jar;C:\userapp\apache-maven-3.5.4\repository\com\fasterxml\classmate\1.3.1\classmate-1.3.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\slf4j\slf4j-api\1.7.21\slf4j-api-1.7.21.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\mapstruct\mapstruct\1.0.0.Final\mapstruct-1.0.0.Final.jar;C:\userapp\apache-maven-3.5.4\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\2.0.0\mybatis-spring-boot-starter-2.0.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.8.RELEASE\spring-boot-starter-jdbc-2.0.8.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-jdbc\5.0.12.RELEASE\spring-jdbc-5.0.12.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-tx\5.0.12.RELEASE\spring-tx-5.0.12.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\2.0.0\mybatis-spring-boot-autoconfigure-2.0.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\mybatis\mybatis\3.5.0\mybatis-3.5.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\mybatis\mybatis-spring\2.0.0\mybatis-spring-2.0.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-starter-test\2.0.2.RELEASE\spring-boot-starter-test-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-test\2.0.2.RELEASE\spring-boot-test-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.2.RELEASE\spring-boot-test-autoconfigure-2.0.2.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\userapp\apache-maven-3.5.4\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\userapp\apache-maven-3.5.4\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\userapp\apache-maven-3.5.4\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar;C:\userapp\apache-maven-3.5.4\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\userapp\apache-maven-3.5.4\repository\net\bytebuddy\byte-buddy-agent\1.7.9\byte-buddy-agent-1.7.9.jar;C:\userapp\apache-maven-3.5.4\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\userapp\apache-maven-3.5.4\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\userapp\apache-maven-3.5.4\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\userapp\apache-maven-3.5.4\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-core\5.0.6.RELEASE\spring-core-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-jcl\5.0.6.RELEASE\spring-jcl-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\springframework\spring-test\5.0.6.RELEASE\spring-test-5.0.6.RELEASE.jar;C:\userapp\apache-maven-3.5.4\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar;C:\userapp\apache-maven-3.5.4\repository\io\github\biezhi\oh-my-email\0.0.4\oh-my-email-0.0.4.jar;C:\userapp\apache-maven-3.5.4\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\userapp\apache-maven-3.5.4\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\userapp\apache-maven-3.5.4\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\瓜皮"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="basedir" value="D:\ideaProctect\email"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\瓜皮\AppData\Local\Temp\surefire5478065696638036247\surefirebooter463089991557937027.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="user.name" value="瓜皮"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\userapp\apache-maven-3.5.4\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\瓜皮\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2018.3.3"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="user.dir" value="D:\ideaProctect\email"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\userapp\apache-maven-3.5.4\bin;C:\Users\瓜皮\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="C:\userapp\apache-maven-3.5.4\repository"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testSendAttach on testSendAttach(com.tester.cases.EmailTest)" classname="com.tester.cases.EmailTest" time="0.696">
+    <failure message="javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&amp;&amp;id=28&amp;&amp;no=1001256&#10;" type="io.github.biezhi.ome.SendMailException"><![CDATA[io.github.biezhi.ome.SendMailException: 
+javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendAttach(EmailTest.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 
+535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendAttach(EmailTest.java:58)
+]]></failure>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.2.RELEASE)
+
+2020-03-10 14:50:35.758 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/userapp/apache-maven-3.5.4/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/C:/userapp/apache-maven-3.5.4/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-03-10 14:50:35.778 [main] INFO  com.tester.cases.EmailTest - Starting EmailTest on DESKTOP-460F5LV with PID 7356 (started by 瓜皮 in D:\ideaProctect\email)
+2020-03-10 14:50:35.778 [main] INFO  com.tester.cases.EmailTest - No active profile set, falling back to default profiles: default
+2020-03-10 14:50:35.829 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@73d983ea: startup date [Tue Mar 10 14:50:35 CST 2020]; root of context hierarchy
+2020-03-10 14:50:36.262 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester.dao]' package. Please check your configuration.
+2020-03-10 14:50:36.358 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester]' package. Please check your configuration.
+2020-03-10 14:50:36.910 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-10 14:50:37.093 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@73d983ea: startup date [Tue Mar 10 14:50:35 CST 2020]; root of context hierarchy
+2020-03-10 14:50:37.253 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-10 14:50:37.254 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-10 14:50:37.284 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-10 14:50:37.284 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-10 14:50:37.634 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-03-10 14:50:37.726 [main] INFO  com.tester.cases.EmailTest - Started EmailTest in 2.383 seconds (JVM running for 3.217)
+DEBUG: JavaMail version 1.6.2
+DEBUG: successfully loaded resource: /META-INF/javamail.default.address.map
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: need username and password for authentication
+DEBUG SMTP: protocolConnect returning false, host=smtp.qq.com, user=瓜皮, password=<null>
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.qq.com", port 465, isSSL true
+220 newxmesmtplogicsvrszc3.qq.com XMail Esmtp QQ Mail Server.
+DEBUG SMTP: connected to host "smtp.qq.com", port: 465
+EHLO DESKTOP-460F5LV
+250-newxmesmtplogicsvrszc3.qq.com
+250-PIPELINING
+250-SIZE 73400320
+250-AUTH LOGIN PLAIN
+250-AUTH=LOGIN
+250-MAILCOMPRESS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "SIZE", arg "73400320"
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN"
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg ""
+DEBUG SMTP: Found extension "MAILCOMPRESS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: protocolConnect login, host=smtp.qq.com, user=yaokai@kanda-data.com, password=<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN failed
+]]></system-out>
+    <system-err><![CDATA[三月 10, 2020 2:50:35 下午 org.springframework.boot.test.context.SpringBootTestContextBootstrapper buildDefaultMergedContextConfiguration
+信息: Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tester.cases.EmailTest], using SpringBootContextLoader
+三月 10, 2020 2:50:35 下午 org.springframework.test.context.support.AbstractContextLoader generateDefaultLocations
+信息: Could not detect default resource locations for test class [com.tester.cases.EmailTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+三月 10, 2020 2:50:35 下午 org.springframework.test.context.support.AnnotationConfigContextLoaderUtils detectDefaultConfigurationClasses
+信息: Could not detect default configuration classes for test class [com.tester.cases.EmailTest]: EmailTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+三月 10, 2020 2:50:35 下午 org.springframework.boot.test.context.SpringBootTestContextBootstrapper getOrFindConfigurationClasses
+信息: Found @SpringBootConfiguration com.tester.Application for test class com.tester.cases.EmailTest
+三月 10, 2020 2:50:35 下午 org.springframework.boot.test.context.SpringBootTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+信息: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+三月 10, 2020 2:50:35 下午 org.springframework.boot.test.context.SpringBootTestContextBootstrapper getTestExecutionListeners
+信息: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@68e5eea7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@291b4bf5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2d2ffcb7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@762ef0ea, org.springframework.test.context.support.DirtiesContextTestExecutionListener@31f9b85e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@424e1977, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@10d68fcd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@117e949d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6db9f5a4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f8edcc5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7b02881e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1ebd319f]
+]]></system-err>
+  </testcase>
+  <testcase name="testSendAttachURL on testSendAttachURL(com.tester.cases.EmailTest)" classname="com.tester.cases.EmailTest" time="6.892">
+    <failure message="javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&amp;&amp;id=28&amp;&amp;no=1001256&#10;" type="io.github.biezhi.ome.SendMailException"><![CDATA[io.github.biezhi.ome.SendMailException: 
+javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendAttachURL(EmailTest.java:68)
+Caused by: javax.mail.AuthenticationFailedException: 
+535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendAttachURL(EmailTest.java:68)
+]]></failure>
+    <system-out><![CDATA[DEBUG: JavaMail version 1.6.2
+DEBUG: successfully loaded resource: /META-INF/javamail.default.address.map
+2020-03-10 14:50:38.731 [cluster-ClusterId{value='5e6738bd689e9d1cbc20da47', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: need username and password for authentication
+DEBUG SMTP: protocolConnect returning false, host=smtp.qq.com, user=瓜皮, password=<null>
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.qq.com", port 465, isSSL true
+220 newxmesmtplogicsvrszc1.qq.com XMail Esmtp QQ Mail Server.
+DEBUG SMTP: connected to host "smtp.qq.com", port: 465
+EHLO DESKTOP-460F5LV
+250-newxmesmtplogicsvrszc1.qq.com
+250-PIPELINING
+250-SIZE 73400320
+250-AUTH LOGIN PLAIN
+250-AUTH=LOGIN
+250-MAILCOMPRESS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "SIZE", arg "73400320"
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN"
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg ""
+DEBUG SMTP: Found extension "MAILCOMPRESS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: protocolConnect login, host=smtp.qq.com, user=yaokai@kanda-data.com, password=<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN failed
+]]></system-out>
+  </testcase>
+  <testcase name="testSendHtml on testSendHtml(com.tester.cases.EmailTest)" classname="com.tester.cases.EmailTest" time="0.365">
+    <failure message="javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&amp;&amp;id=28&amp;&amp;no=1001256&#10;" type="io.github.biezhi.ome.SendMailException"><![CDATA[io.github.biezhi.ome.SendMailException: 
+javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendHtml(EmailTest.java:48)
+Caused by: javax.mail.AuthenticationFailedException: 
+535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendHtml(EmailTest.java:48)
+]]></failure>
+    <system-out><![CDATA[DEBUG: JavaMail version 1.6.2
+DEBUG: successfully loaded resource: /META-INF/javamail.default.address.map
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: need username and password for authentication
+DEBUG SMTP: protocolConnect returning false, host=smtp.qq.com, user=瓜皮, password=<null>
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.qq.com", port 465, isSSL true
+220 newxmesmtplogicsvrsza3.qq.com XMail Esmtp QQ Mail Server.
+DEBUG SMTP: connected to host "smtp.qq.com", port: 465
+EHLO DESKTOP-460F5LV
+250-newxmesmtplogicsvrsza3.qq.com
+250-PIPELINING
+250-SIZE 73400320
+250-AUTH LOGIN PLAIN
+250-AUTH=LOGIN
+250-MAILCOMPRESS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "SIZE", arg "73400320"
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN"
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg ""
+DEBUG SMTP: Found extension "MAILCOMPRESS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: protocolConnect login, host=smtp.qq.com, user=yaokai@kanda-data.com, password=<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN failed
+]]></system-out>
+  </testcase>
+  <testcase name="testSendText on testSendText(com.tester.cases.EmailTest)" classname="com.tester.cases.EmailTest" time="0.359">
+    <failure message="javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&amp;&amp;id=28&amp;&amp;no=1001256&#10;" type="io.github.biezhi.ome.SendMailException"><![CDATA[io.github.biezhi.ome.SendMailException: 
+javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendText(EmailTest.java:39)
+Caused by: javax.mail.AuthenticationFailedException: 
+535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendText(EmailTest.java:39)
+]]></failure>
+    <system-out><![CDATA[DEBUG: JavaMail version 1.6.2
+DEBUG: successfully loaded resource: /META-INF/javamail.default.address.map
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: need username and password for authentication
+DEBUG SMTP: protocolConnect returning false, host=smtp.qq.com, user=瓜皮, password=<null>
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.qq.com", port 465, isSSL true
+220 newxmesmtplogicsvrszb1.qq.com XMail Esmtp QQ Mail Server.
+DEBUG SMTP: connected to host "smtp.qq.com", port: 465
+EHLO DESKTOP-460F5LV
+250-newxmesmtplogicsvrszb1.qq.com
+250-PIPELINING
+250-SIZE 73400320
+250-AUTH LOGIN PLAIN
+250-AUTH=LOGIN
+250-MAILCOMPRESS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "SIZE", arg "73400320"
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN"
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg ""
+DEBUG SMTP: Found extension "MAILCOMPRESS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: protocolConnect login, host=smtp.qq.com, user=yaokai@kanda-data.com, password=<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN failed
+]]></system-out>
+  </testcase>
+</testsuite>

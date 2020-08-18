@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+logging:
+  file: mylog.log
+  path: logs
+
+spring:
+  application:
+    name: myTest
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-bp1q9x9a0735kho0muo.mysql.rds.aliyuncs.com/qc?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: yaokai
+    password: yaokai_0224
+
+mybatis:
+  type-aliases-package: classpath:mapping/*Mapper.xml
+  mapper-locations: classpath:mapper/*

@@ -1,0 +1,7 @@
+com\tester\model\TestResult.class
+com\tester\model\TestResultDBManger.class
+com\tester\utils\DatabaseUtil.class
+com\tester\test\TestResultTest.class
+com\tester\test\DouyinResultTest.class
+com\tester\Application.class
+com\tester\dao\TestResultDao.class

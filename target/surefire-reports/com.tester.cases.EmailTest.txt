@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.tester.cases.EmailTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 11.453 s <<< FAILURE! - in com.tester.cases.EmailTest
+testSendAttach on testSendAttach(com.tester.cases.EmailTest)(com.tester.cases.EmailTest)  Time elapsed: 0.696 s  <<< FAILURE!
+io.github.biezhi.ome.SendMailException: 
+javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendAttach(EmailTest.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 
+535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendAttach(EmailTest.java:58)
+
+testSendAttachURL on testSendAttachURL(com.tester.cases.EmailTest)(com.tester.cases.EmailTest)  Time elapsed: 6.892 s  <<< FAILURE!
+io.github.biezhi.ome.SendMailException: 
+javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendAttachURL(EmailTest.java:68)
+Caused by: javax.mail.AuthenticationFailedException: 
+535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendAttachURL(EmailTest.java:68)
+
+testSendHtml on testSendHtml(com.tester.cases.EmailTest)(com.tester.cases.EmailTest)  Time elapsed: 0.365 s  <<< FAILURE!
+io.github.biezhi.ome.SendMailException: 
+javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendHtml(EmailTest.java:48)
+Caused by: javax.mail.AuthenticationFailedException: 
+535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendHtml(EmailTest.java:48)
+
+testSendText on testSendText(com.tester.cases.EmailTest)(com.tester.cases.EmailTest)  Time elapsed: 0.359 s  <<< FAILURE!
+io.github.biezhi.ome.SendMailException: 
+javax.mail.AuthenticationFailedException: 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendText(EmailTest.java:39)
+Caused by: javax.mail.AuthenticationFailedException: 
+535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+	at com.tester.cases.EmailTest.testSendText(EmailTest.java:39)
+
