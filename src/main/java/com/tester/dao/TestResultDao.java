@@ -24,15 +24,12 @@ public class TestResultDao {
         Integer i = null;
         String sql = "select count(product_id) as numb from jd.jd_comment_count where `date` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
@@ -41,15 +38,12 @@ public class TestResultDao {
         String s = null;
         String sql = "select min(date) as DATE from jd.jd_comment_count;";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             s = rs.getString("DATE");
             System.out.println(rs.getString("DATE"));
-
         }
         return s;
     }
@@ -57,18 +51,14 @@ public class TestResultDao {
 
     public Integer jdTwoDayCount(String jd) throws SQLException {
         Integer i = null;
-
-        String sql = "select count(product_id) as numb from jd.jd_comment_count where `date` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY));\n";
+        String sql = "select count(product_id) as numb from jd.jd_comment_count where `date` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
@@ -79,15 +69,12 @@ public class TestResultDao {
         Integer i = null;
         String sql = "select count(product_id) as numb from pdd.pdd_product_sale where `date` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
@@ -96,15 +83,12 @@ public class TestResultDao {
         String s = null;
         String sql = "select min(date) as DATE from pdd.pdd_product_sale;";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             s = rs.getString("DATE");
             System.out.println(rs.getString("DATE"));
-
         }
         return s;
     }
@@ -112,18 +96,14 @@ public class TestResultDao {
 
     public Integer pddTwoDayCount(String pdd) throws SQLException {
         Integer i = null;
-
         String sql = "select count(product_id) as numb from pdd.pdd_product_sale where `date` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
@@ -133,15 +113,12 @@ public class TestResultDao {
         Integer i = null;
         String sql = "select count(product_id) as numb from suning.suning_product_history where `date` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
@@ -150,15 +127,12 @@ public class TestResultDao {
         String s = null;
         String sql = "select min(date) as DATE from suning.suning_product_history;";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             s = rs.getString("DATE");
             System.out.println(rs.getString("DATE"));
-
         }
         return s;
     }
@@ -166,18 +140,14 @@ public class TestResultDao {
 
     public Integer suningTwoDayCount(String suning) throws SQLException {
         Integer i = null;
-
         String sql = "select count(product_id) as numb from suning.suning_product_history where `date` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
@@ -187,15 +157,12 @@ public class TestResultDao {
         Integer i = null;
         String sql = "select count(ID) as numb from kaola.kaola2_product_sale_data where `DATE_TIME` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
@@ -204,15 +171,12 @@ public class TestResultDao {
         String s = null;
         String sql = "select min(DATE_TIME) as DATE from kaola.kaola2_product_sale_data;";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             s = rs.getString("DATE");
             System.out.println(rs.getString("DATE"));
-
         }
         return s;
     }
@@ -220,36 +184,29 @@ public class TestResultDao {
 
     public Integer kaolaTwoDayCount(String kaola) throws SQLException {
         Integer i = null;
-
         String sql = "select count(ID) as numb from kaola.kaola2_product_sale_data where `DATE_TIME` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
 
     //淘宝sql
     public Integer tbOneDayCount(String tb) throws SQLException {
-            Integer i = null;
-            String sql = "select count(NUMBER_ID) as numb from tb.tb_product_day_sale where `DATE` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY));";
-            conn = TestResultDBManger.getConn();
-
-            ps = conn.prepareStatement(sql);
-
-            rs = ps.executeQuery();
-            List list = new ArrayList();
+        Integer i = null;
+        String sql = "select count(NUMBER_ID) as numb from tb.tb_product_day_sale where `DATE` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY));";
+        conn = TestResultDBManger.getConn();
+        ps = conn.prepareStatement(sql);
+        rs = ps.executeQuery();
+        List list = new ArrayList();
             if (rs.next()){
                 i = rs.getInt("numb");
                 System.out.println(rs.getInt("numb"));
-
             }
         return i;
     }
@@ -258,15 +215,12 @@ public class TestResultDao {
         String s = null;
         String sql = "select min(DATE) as DATE from tb.tb_product_day_sale;";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             s = rs.getString("DATE");
             System.out.println(rs.getString("DATE"));
-
         }
         return s;
     }
@@ -274,18 +228,14 @@ public class TestResultDao {
 
     public Integer tbTwoDayCount(String tb) throws SQLException {
         Integer i = null;
-
         String sql = "select count(NUMBER_ID) as numb from tb.tb_product_day_sale where `DATE` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
@@ -296,15 +246,12 @@ public class TestResultDao {
         Integer i = null;
         String sql = "select count(product_id) as numb from du.du_day_sale where `sale_time` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
@@ -313,15 +260,12 @@ public class TestResultDao {
         String s = null;
         String sql = "select min(sale_time) as DATE from du.du_day_sale;";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             s = rs.getString("DATE");
             System.out.println(rs.getString("DATE"));
-
         }
         return s;
     }
@@ -329,21 +273,16 @@ public class TestResultDao {
 
     public Integer duThreeDayCount(String du) throws SQLException {
         Integer i = null;
-
         String sql = "select count(product_id) as numb from du.du_day_sale where `sale_time` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 3 DAY));";
         conn = TestResultDBManger.getConn();
-
         ps = conn.prepareStatement(sql);
-
         rs = ps.executeQuery();
         List list = new ArrayList();
         if (rs.next()){
             i = rs.getInt("numb");
             System.out.println(rs.getInt("numb"));
-
         }
         return i;
     }
-
 
 }
