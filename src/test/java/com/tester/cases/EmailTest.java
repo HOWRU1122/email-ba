@@ -176,6 +176,7 @@ public class EmailTest {
         //京东html
         content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
         content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">京东</th></tr>");
+        content.append("<tr><th align=\"center\">前天入库的评论量</th><td align=\"center\">" + jdTwoDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨天入库的评论量</th><td align=\"center\">" + jdOneDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨日环比</th><td align=\"center\">" + jdMoMCount + '%' + "</td></tr>");
         content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + jdMinimumTimeCount + "</td></tr>");
@@ -186,6 +187,7 @@ public class EmailTest {
         //拼多多html
         content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
         content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">拼多多</th></tr>");
+        content.append("<tr><th align=\"center\">前天入库的商品量</th><td align=\"center\">" + pddTwoDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨天入库的商品量</th><td align=\"center\">" + pddOneDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨日环比</th><td align=\"center\">" + pddMoMCount + '%' + "</td></tr>");
         content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + pddMinimumTimeCount + "</td></tr>");
@@ -196,6 +198,7 @@ public class EmailTest {
         //苏宁html
         content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
         content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">苏宁</th></tr>");
+        content.append("<tr><th align=\"center\">前天入库的商品量</th><td align=\"center\">" + suningTwoDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨天入库的商品量</th><td align=\"center\">" + suningOneDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨日环比</th><td align=\"center\">" + suningMoMCount + '%' + "</td></tr>");
         content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + suningMinimumTimeCount + "</td></tr>");
@@ -206,6 +209,7 @@ public class EmailTest {
         //考拉html
         content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
         content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">考拉</th></tr>");
+        content.append("<tr><th align=\"center\">前天入库的商品量</th><td align=\"center\">" + kaolaTwoDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨天入库的商品量</th><td align=\"center\">" + kaolaOneDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨日环比</th><td align=\"center\">" + kaolaMoMCount + '%' + "</td></tr>");
         content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + kaolaMinimumTimeCount + "</td></tr>");
@@ -216,6 +220,7 @@ public class EmailTest {
         //淘宝html
         content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
         content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">淘宝</th></tr>");
+        content.append("<tr><th align=\"center\">前天入库的商品量</th><td align=\"center\">" + tbTwoDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨天入库的商品量</th><td align=\"center\">" + tbOneDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨日环比</th><td align=\"center\">" + tbMoMCount + '%' + "</td></tr>");
         content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + tbMinimumTimeCount + "</td></tr>");
@@ -227,6 +232,7 @@ public class EmailTest {
         //得物html
         content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
         content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">得物</th></tr>");
+        content.append("<tr><th align=\"center\">前两天入库的商品量</th><td align=\"center\">" + duThreeDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">前天入库的商品量</th><td align=\"center\">" + duTwoDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">前日环比</th><td align=\"center\">" + duMoMCount + '%' + "</td></tr>");
         content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + duMinimumTimeCount + "</td></tr>");
@@ -238,8 +244,8 @@ public class EmailTest {
 
         OhMyEmail.subject("数据源抓取量监控")
                 .from("yaokai")
-                //.to("yanglei@kanda-data.com , yaokai@kanda-data.com")
-                .to("yaokai@kanda-data.com")
+                .to("yanglei@kanda-data.com , yaokai@kanda-data.com")
+                //.to("yaokai@kanda-data.com")
                 .html(content.toString())
                 .send();
 
