@@ -243,9 +243,9 @@ public class EmailTest {
         //发送邮件
 
         OhMyEmail.subject("数据源抓取量监控")
-                .from("yaokai")
+                .from("data source")
                 .to("yanglei@kanda-data.com , yaokai@kanda-data.com")
-                //.to("yaokai@kanda-data.com")
+               // .to("yaokai@kanda-data.com")
                 .html(content.toString())
                 .send();
 
