@@ -105,70 +105,70 @@ public class EmailTest {
 
 
         int thirtythreshold = 30;
-        int fiftythreshold = 50;
+        int negativethirtythreshold = -30;
 
-        if (jddouble >= thirtythreshold  && jddouble <= fiftythreshold) {
+        if (jddouble < negativethirtythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
+        }
+        else if (jdMoMCount > thirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (jdMoMCount > fiftythreshold) {
+
+
+
+        if (pdddouble < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-
-
-
-        if (pdddouble >= thirtythreshold  && pdddouble <= fiftythreshold) {
+        else if (pddMoMCount > thirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (pddMoMCount > fiftythreshold) {
+
+
+
+        if (suningdouble < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-
-
-
-        if (suningdouble >= thirtythreshold  && suningdouble <= fiftythreshold) {
+        else if (suningMoMCount > thirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (suningMoMCount > fiftythreshold) {
+
+
+
+        if (kaoladouble < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-
-
-
-        if (kaoladouble >= thirtythreshold  && kaoladouble <= fiftythreshold) {
+        else if (kaolaMoMCount > thirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (kaolaMoMCount > fiftythreshold) {
+
+
+
+        if (tbdouble < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-
-
-
-        if (tbdouble >= thirtythreshold  && tbdouble <= fiftythreshold) {
+        else if (tbMoMCount > thirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (tbMoMCount > fiftythreshold) {
+
+
+
+        if (dudouble < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-
-
-
-        if (dudouble >= thirtythreshold  && dudouble <= fiftythreshold) {
+        else if (duMoMCount > thirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
-        }
-        else if (duMoMCount > fiftythreshold) {
-            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
 
 
