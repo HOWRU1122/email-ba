@@ -106,70 +106,143 @@ public class EmailTest {
 
         int thirtythreshold = 30;
         int negativethirtythreshold = -30;
+        int fiftythreshold = 50;
+        int negativefiftythreshold = -50;
 
-        if (jddouble < negativethirtythreshold) {
+        if (jdMoMCount < negativethirtythreshold && jdMoMCount > negativefiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (jdMoMCount > thirtythreshold) {
+
+        if (jdMoMCount > thirtythreshold && jdMoMCount < fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
+        if (jdMoMCount > fiftythreshold && jdMoMCount < negativethirtythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+        }
 
 
-        if (pdddouble < negativethirtythreshold) {
+        if (jdMoMCount < negativefiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
+
+        if (pddMoMCount < negativethirtythreshold && pddMoMCount > negativefiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (pddMoMCount > thirtythreshold) {
+        if (pddMoMCount > thirtythreshold && pddMoMCount < fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
+        if (pddMoMCount > fiftythreshold && pddMoMCount < negativethirtythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+        }
 
 
-        if (suningdouble < negativethirtythreshold) {
+        if (pddMoMCount < negativefiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
+
+        if (suningMoMCount < negativethirtythreshold && suningMoMCount > negativefiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (suningMoMCount > thirtythreshold) {
+        else if (suningMoMCount > thirtythreshold && suningMoMCount < fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
+        if (suningMoMCount > fiftythreshold  && suningMoMCount < negativethirtythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+        }
 
 
-        if (kaoladouble < negativethirtythreshold) {
+        if (suningMoMCount < negativefiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
+
+
+        if (kaolaMoMCount < negativethirtythreshold && kaolaMoMCount > negativefiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (kaolaMoMCount > thirtythreshold) {
+        if (kaolaMoMCount > thirtythreshold && kaolaMoMCount < fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
+        if (kaolaMoMCount > fiftythreshold  && kaolaMoMCount < negativethirtythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+        }
 
 
-        if (tbdouble < negativethirtythreshold) {
+        if (kaolaMoMCount < negativefiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
+
+
+        if (tbMoMCount < negativethirtythreshold  && tbMoMCount > negativefiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (tbMoMCount > thirtythreshold) {
+        if (tbMoMCount > thirtythreshold && tbMoMCount < fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
+        if (tbMoMCount > fiftythreshold  && tbMoMCount < negativethirtythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+        }
 
 
-        if (dudouble < negativethirtythreshold) {
+        if (tbMoMCount < negativefiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
+
+
+        if (duMoMCount < negativethirtythreshold && duMoMCount > negativefiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
-        else if (duMoMCount > thirtythreshold) {
+        if (duMoMCount > thirtythreshold && duMoMCount < fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
+
+        if (duMoMCount > fiftythreshold  && duMoMCount < negativethirtythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
+        if (duMoMCount < negativefiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
 
 
 
@@ -245,7 +318,7 @@ public class EmailTest {
         OhMyEmail.subject("数据源抓取量监控")
                 .from("data source")
                 .to("yanglei@kanda-data.com , yaokai@kanda-data.com")
-               // .to("yaokai@kanda-data.com")
+                //.to("yaokai@kanda-data.com")
                 .html(content.toString())
                 .send();
 
