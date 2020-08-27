@@ -109,7 +109,7 @@ public class EmailTest {
         int fiftythreshold = 50;
         int negativefiftythreshold = -50;
 
-        if (jdMoMCount < negativethirtythreshold && jdMoMCount > negativefiftythreshold) {
+        if (jdMoMCount > negativefiftythreshold && jdMoMCount < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -119,7 +119,7 @@ public class EmailTest {
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
-        if (jdMoMCount > fiftythreshold && jdMoMCount < negativethirtythreshold) {
+        if (jdMoMCount > fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">京东入库评论量昨日环比:"+ jdMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -131,8 +131,8 @@ public class EmailTest {
         }
 
 
-
-        if (pddMoMCount < negativethirtythreshold && pddMoMCount > negativefiftythreshold) {
+        //拼多多判断条件
+        if (pddMoMCount > negativefiftythreshold && pddMoMCount < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -141,7 +141,7 @@ public class EmailTest {
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
-        if (pddMoMCount > fiftythreshold && pddMoMCount < negativethirtythreshold) {
+        if (pddMoMCount > fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">拼多多入库商品量昨日环比:"+ pddMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -153,8 +153,8 @@ public class EmailTest {
         }
 
 
-
-        if (suningMoMCount < negativethirtythreshold && suningMoMCount > negativefiftythreshold) {
+        //苏宁判断条件
+        if (suningMoMCount > negativefiftythreshold && suningMoMCount < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -163,7 +163,7 @@ public class EmailTest {
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
-        if (suningMoMCount > fiftythreshold  && suningMoMCount < negativethirtythreshold) {
+        if (suningMoMCount > fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">苏宁入库商品量昨日环比:"+ suningMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -175,9 +175,8 @@ public class EmailTest {
         }
 
 
-
-
-        if (kaolaMoMCount < negativethirtythreshold && kaolaMoMCount > negativefiftythreshold) {
+       //考拉判断条件
+        if (kaolaMoMCount > negativefiftythreshold && kaolaMoMCount < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -186,7 +185,7 @@ public class EmailTest {
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
-        if (kaolaMoMCount > fiftythreshold  && kaolaMoMCount < negativethirtythreshold) {
+        if (kaolaMoMCount > fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">考拉入库商品量昨日环比:"+ kaolaMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -199,8 +198,8 @@ public class EmailTest {
 
 
 
-
-        if (tbMoMCount < negativethirtythreshold  && tbMoMCount > negativefiftythreshold) {
+       //淘宝判断条件
+        if (tbMoMCount > negativefiftythreshold && tbMoMCount < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -209,7 +208,7 @@ public class EmailTest {
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
-        if (tbMoMCount > fiftythreshold  && tbMoMCount < negativethirtythreshold) {
+        if (tbMoMCount > fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -222,8 +221,8 @@ public class EmailTest {
 
 
 
-
-        if (duMoMCount < negativethirtythreshold && duMoMCount > negativefiftythreshold) {
+        //得物判断条件
+        if (duMoMCount > negativefiftythreshold && duMoMCount < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
@@ -232,7 +231,7 @@ public class EmailTest {
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
-        if (duMoMCount > fiftythreshold  && duMoMCount < negativethirtythreshold) {
+        if (duMoMCount > fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
             content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">得物入库商品量前日环比:"+ duMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
