@@ -264,6 +264,52 @@ public class EmailTest {
 
 
 
+        //淘宝热销商品判断条件
+        if (tbsaleMoMCount > negativefiftythreshold && tbsaleMoMCount < negativethirtythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbsaleMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
+        }
+        if (tbsaleMoMCount > thirtythreshold && tbsaleMoMCount < fiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbsaleMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+        if (tbsaleMoMCount > fiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbsaleMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
+        if (tbsaleMoMCount < negativefiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbsaleMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
+
+
+        //抖音热销商品判断条件
+        if (dysaleMoMCount > negativefiftythreshold && dysaleMoMCount < negativethirtythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ dysaleMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
+        }
+        if (dysaleMoMCount > thirtythreshold && dysaleMoMCount < fiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ dysaleMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+        if (dysaleMoMCount > fiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ dysaleMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
+        if (dysaleMoMCount < negativefiftythreshold) {
+            content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ dysaleMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+        }
+
+
 
         //京东html
         content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
@@ -359,8 +405,8 @@ public class EmailTest {
 
         OhMyEmail.subject("数据源抓取量监控")
                 .from("data source")
-                .to("yanglei@kanda-data.com , yaokai@kanda-data.com")
-                //.to("yaokai@kanda-data.com")
+                //.to("yanglei@kanda-data.com , yaokai@kanda-data.com")
+                .to("yaokai@kanda-data.com")
                 .html(content.toString())
                 .send();
 
