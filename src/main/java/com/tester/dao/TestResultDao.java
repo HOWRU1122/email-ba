@@ -285,4 +285,93 @@ public class TestResultDao {
         return i;
     }
 
+
+    //淘宝热销商品sql
+    public Integer tbsaleOneDayCount(String tbsale) throws SQLException {
+        Integer i = null;
+        String sql = "select count(number_id) as numb from ba.hotsale30days where `date` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY));";
+        conn = TestResultDBManger.getConn();
+        ps = conn.prepareStatement(sql);
+        rs = ps.executeQuery();
+        List list = new ArrayList();
+        if (rs.next()){
+            i = rs.getInt("numb");
+            System.out.println(rs.getInt("numb"));
+        }
+        return i;
+    }
+
+    public String tbsaleMinimumTimeCount(String tbsale) throws SQLException {
+        String s = null;
+        String sql = "select min(date) as date from ba.hotsale30days;";
+        conn = TestResultDBManger.getConn();
+        ps = conn.prepareStatement(sql);
+        rs = ps.executeQuery();
+        List list = new ArrayList();
+        if (rs.next()){
+            s = rs.getString("DATE");
+            System.out.println(rs.getString("DATE"));
+        }
+        return s;
+    }
+
+
+    public Integer tbsaleTwoDayCount(String tbsale) throws SQLException {
+        Integer i = null;
+        String sql = "select count(number_id) as numb from ba.hotsale30days where `date` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY));";
+        conn = TestResultDBManger.getConn();
+        ps = conn.prepareStatement(sql);
+        rs = ps.executeQuery();
+        List list = new ArrayList();
+        if (rs.next()){
+            i = rs.getInt("numb");
+            System.out.println(rs.getInt("numb"));
+        }
+        return i;
+    }
+
+
+    //抖音热销商品sql
+    public Integer dysaleOneDayCount(String dysale) throws SQLException {
+        Integer i = null;
+        String sql = "select count(product_id) as numb from ba.dy_hotsale30days where `date_time` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY));";
+        conn = TestResultDBManger.getConn();
+        ps = conn.prepareStatement(sql);
+        rs = ps.executeQuery();
+        List list = new ArrayList();
+        if (rs.next()){
+            i = rs.getInt("numb");
+            System.out.println(rs.getInt("numb"));
+        }
+        return i;
+    }
+
+    public String dysaleMinimumTimeCount(String dysale) throws SQLException {
+        String s = null;
+        String sql = "select min(date_time) as date from ba.dy_hotsale30days;";
+        conn = TestResultDBManger.getConn();
+        ps = conn.prepareStatement(sql);
+        rs = ps.executeQuery();
+        List list = new ArrayList();
+        if (rs.next()){
+            s = rs.getString("DATE");
+            System.out.println(rs.getString("DATE"));
+        }
+        return s;
+    }
+
+
+    public Integer dysaleTwoDayCount(String dysale) throws SQLException {
+        Integer i = null;
+        String sql = "select count(product_id) as numb from ba.dy_hotsale30days where `date_time` = CONCAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY));";
+        conn = TestResultDBManger.getConn();
+        ps = conn.prepareStatement(sql);
+        rs = ps.executeQuery();
+        List list = new ArrayList();
+        if (rs.next()){
+            i = rs.getInt("numb");
+            System.out.println(rs.getInt("numb"));
+        }
+        return i;
+    }
 }

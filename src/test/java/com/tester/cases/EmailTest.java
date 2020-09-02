@@ -104,6 +104,26 @@ public class EmailTest {
         System.out.println(duMoMCount);
 
 
+        //淘宝热销商品
+        String tbsale = null;
+        Integer tbsaleOneDayCount = testResultDao.tbsaleOneDayCount(tbsale);
+        String tbsaleMinimumTimeCount = testResultDao.tbsaleMinimumTimeCount(tbsale);
+        Integer tbsaleTwoDayCount = testResultDao.tbsaleTwoDayCount(tbsale);
+        double tbsaledouble = 1.0 * (tbsaleOneDayCount - tbsaleTwoDayCount) / tbsaleTwoDayCount * 100;
+        Double tbsaleMoMCount = Double.valueOf(String.format("%.2f", tbsaledouble));
+        System.out.println(tbsaleMoMCount);
+
+
+
+        //抖音热销商品
+        String dysale = null;
+        Integer dysaleOneDayCount = testResultDao.dysaleOneDayCount(dysale);
+        String dysaleMinimumTimeCount = testResultDao.dysaleMinimumTimeCount(dysale);
+        Integer dysaleTwoDayCount = testResultDao.dysaleTwoDayCount(dysale);
+        double dysaledouble = 1.0 * (dysaleOneDayCount - dysaleTwoDayCount) / dysaleTwoDayCount * 100;
+        Double dysaleMoMCount = Double.valueOf(String.format("%.2f", dysaledouble));
+        System.out.println(dysaleMoMCount);
+
         int thirtythreshold = 30;
         int negativethirtythreshold = -30;
         int fiftythreshold = 50;
@@ -312,12 +332,35 @@ public class EmailTest {
         content.append("</body></html>");
 
 
+        //淘宝热销商品html
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">淘宝热销商品</th></tr>");
+        content.append("<tr><th align=\"center\">前天入库的商品量</th><td align=\"center\">" + tbsaleTwoDayCount + "</td></tr>");
+        content.append("<tr><th align=\"center\">昨天入库的商品量</th><td align=\"center\">" + tbsaleOneDayCount + "</td></tr>");
+        content.append("<tr><th align=\"center\">昨日环比</th><td align=\"center\">" + tbsaleMoMCount + '%' + "</td></tr>");
+        content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + tbsaleMinimumTimeCount + "</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
+
+
+
+        //抖音热销商品html
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">抖音热销商品</th></tr>");
+        content.append("<tr><th align=\"center\">前天入库的商品量</th><td align=\"center\">" + dysaleTwoDayCount + "</td></tr>");
+        content.append("<tr><th align=\"center\">昨天入库的商品量</th><td align=\"center\">" + dysaleOneDayCount + "</td></tr>");
+        content.append("<tr><th align=\"center\">昨日环比</th><td align=\"center\">" + dysaleMoMCount + '%' + "</td></tr>");
+        content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + dysaleMinimumTimeCount + "</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
+
+
         //发送邮件
 
         OhMyEmail.subject("数据源抓取量监控")
                 .from("data source")
-                .to("yanglei@kanda-data.com , yaokai@kanda-data.com")
-                //.to("yaokai@kanda-data.com")
+                //.to("yanglei@kanda-data.com , yaokai@kanda-data.com")
+                .to("yaokai@kanda-data.com")
                 .html(content.toString())
                 .send();
 

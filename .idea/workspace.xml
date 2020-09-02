@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/EmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/EmailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/EmailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/EmailTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmailTest">
+  <component name="RunManager" selected="JUnit.EmailTest.testSendAttach">
     <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tester.utils.DateUtils" />
       <module name="email-ba" />
@@ -188,8 +187,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EmailTest" />
         <item itemvalue="JUnit.EmailTest.testSendAttach" />
+        <item itemvalue="JUnit.EmailTest" />
         <item itemvalue="Application.DateUtils" />
         <item itemvalue="JUnit.TestResultTest.testFind" />
         <item itemvalue="JUnit.DouyinResultTest" />
@@ -239,6 +238,11 @@
       <workItem from="1598316880846" duration="3494000" />
       <workItem from="1598352115948" duration="102000" />
       <workItem from="1598403618950" duration="5229000" />
+      <workItem from="1598487501039" duration="2034000" />
+      <workItem from="1598574744149" duration="598000" />
+      <workItem from="1598833442099" duration="598000" />
+      <workItem from="1598922218068" duration="599000" />
+      <workItem from="1599007856723" duration="1967000" />
     </task>
     <servers />
   </component>
@@ -246,29 +250,29 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1610" height="245" key="GridCell.Tab.0.bottom" timestamp="1598438713094">
+    <state width="1610" height="245" key="GridCell.Tab.0.bottom" timestamp="1598524954606">
       <screen x="0" y="23" width="1920" height="1001" />
     </state>
     <state width="1610" height="253" key="GridCell.Tab.0.bottom/0.23.1680.971@0.23.1680.971" timestamp="1597718346567" />
-    <state width="1610" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1598438713094" />
+    <state width="1610" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1598524954606" />
     <state width="1610" height="253" key="GridCell.Tab.0.bottom/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1597653454702" />
-    <state width="1610" height="245" key="GridCell.Tab.0.center" timestamp="1598438713093">
+    <state width="1610" height="245" key="GridCell.Tab.0.center" timestamp="1598524954605">
       <screen x="0" y="23" width="1920" height="1001" />
     </state>
     <state width="1610" height="253" key="GridCell.Tab.0.center/0.23.1680.971@0.23.1680.971" timestamp="1597718346566" />
-    <state width="1610" height="245" key="GridCell.Tab.0.center/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1598438713093" />
+    <state width="1610" height="245" key="GridCell.Tab.0.center/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1598524954605" />
     <state width="1610" height="253" key="GridCell.Tab.0.center/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1597653454701" />
-    <state width="1610" height="245" key="GridCell.Tab.0.left" timestamp="1598438713092">
+    <state width="1610" height="245" key="GridCell.Tab.0.left" timestamp="1598524954605">
       <screen x="0" y="23" width="1920" height="1001" />
     </state>
     <state width="1610" height="253" key="GridCell.Tab.0.left/0.23.1680.971@0.23.1680.971" timestamp="1597718346566" />
-    <state width="1610" height="245" key="GridCell.Tab.0.left/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1598438713092" />
+    <state width="1610" height="245" key="GridCell.Tab.0.left/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1598524954605" />
     <state width="1610" height="253" key="GridCell.Tab.0.left/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1597653454700" />
-    <state width="1610" height="245" key="GridCell.Tab.0.right" timestamp="1598438713093">
+    <state width="1610" height="245" key="GridCell.Tab.0.right" timestamp="1598524954606">
       <screen x="0" y="23" width="1920" height="1001" />
     </state>
     <state width="1610" height="253" key="GridCell.Tab.0.right/0.23.1680.971@0.23.1680.971" timestamp="1597718346567" />
-    <state width="1610" height="245" key="GridCell.Tab.0.right/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1598438713093" />
+    <state width="1610" height="245" key="GridCell.Tab.0.right/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1598524954606" />
     <state width="1610" height="253" key="GridCell.Tab.0.right/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1597653454702" />
     <state x="600" y="281" key="IDE.errors.dialog" timestamp="1597820018687">
       <screen x="0" y="23" width="1920" height="1001" />
