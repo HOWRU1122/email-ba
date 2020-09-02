@@ -267,22 +267,22 @@ public class EmailTest {
         //淘宝热销商品判断条件
         if (tbsaleMoMCount > negativefiftythreshold && tbsaleMoMCount < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbsaleMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝热销商品入库数据量昨日环比:"+ tbsaleMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
         if (tbsaleMoMCount > thirtythreshold && tbsaleMoMCount < fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbsaleMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝热销商品入库数据量昨日环比:"+ tbsaleMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
         if (tbsaleMoMCount > fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbsaleMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝热销商品入库数据量昨日环比:"+ tbsaleMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
 
 
         if (tbsaleMoMCount < negativefiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ tbsaleMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝热销商品入库数据量昨日环比:"+ tbsaleMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
         }
 
 
@@ -291,22 +291,22 @@ public class EmailTest {
         //抖音热销商品判断条件
         if (dysaleMoMCount > negativefiftythreshold && dysaleMoMCount < negativethirtythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ dysaleMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">抖音热销商品入库数据量昨日环比:"+ dysaleMoMCount + "%" + "超过-30%</th></tr>").append("<br/>").append("<br/>");
         }
         if (dysaleMoMCount > thirtythreshold && dysaleMoMCount < fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ dysaleMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">抖音热销商品入库数据量昨日环比:"+ dysaleMoMCount + "%" + "超过30%</th></tr>").append("<br/>").append("<br/>");
         }
 
         if (dysaleMoMCount > fiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ dysaleMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">抖音热销商品入库数据量昨日环比:"+ dysaleMoMCount + "%" + "超过50%</th></tr>").append("<br/>").append("<br/>");
         }
 
 
         if (dysaleMoMCount < negativefiftythreshold) {
             content.append("<table border=\"5\" style=\"border:none 1px #FFFFFF;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">淘宝入库商品量昨日环比:"+ dysaleMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
+            content.append("<tr style=\"color:#FF0000; font-size:20px\"><th align=\"center\">抖音热销商品入库数据量昨日环比:"+ dysaleMoMCount + "%" + "超过-50%</th></tr>").append("<br/>").append("<br/>");
         }
 
 
