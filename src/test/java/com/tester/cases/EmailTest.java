@@ -335,10 +335,10 @@ public class EmailTest {
         //淘宝热销商品html
         content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
         content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">淘宝热销商品</th></tr>");
-        content.append("<tr><th align=\"center\">前天入库的商品量</th><td align=\"center\">" + tbsaleTwoDayCount + "</td></tr>");
-        content.append("<tr><th align=\"center\">昨天入库的商品量</th><td align=\"center\">" + tbsaleOneDayCount + "</td></tr>");
+        content.append("<tr><th align=\"center\">前天入库的数据量</th><td align=\"center\">" + tbsaleTwoDayCount + "</td></tr>");
+        content.append("<tr><th align=\"center\">昨天入库的数据量</th><td align=\"center\">" + tbsaleOneDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨日环比</th><td align=\"center\">" + tbsaleMoMCount + '%' + "</td></tr>");
-        content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + tbsaleMinimumTimeCount + "</td></tr>");
+        //content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + tbsaleMinimumTimeCount + "</td></tr>");
         content.append("&nbsp;&nbsp;&nbsp;");
         content.append("</body></html>");
 
@@ -347,10 +347,10 @@ public class EmailTest {
         //抖音热销商品html
         content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
         content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">抖音热销商品</th></tr>");
-        content.append("<tr><th align=\"center\">前天入库的商品量</th><td align=\"center\">" + dysaleTwoDayCount + "</td></tr>");
-        content.append("<tr><th align=\"center\">昨天入库的商品量</th><td align=\"center\">" + dysaleOneDayCount + "</td></tr>");
+        content.append("<tr><th align=\"center\">前天入库的数据量</th><td align=\"center\">" + dysaleTwoDayCount + "</td></tr>");
+        content.append("<tr><th align=\"center\">昨天入库的数据量</th><td align=\"center\">" + dysaleOneDayCount + "</td></tr>");
         content.append("<tr><th align=\"center\">昨日环比</th><td align=\"center\">" + dysaleMoMCount + '%' + "</td></tr>");
-        content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + dysaleMinimumTimeCount + "</td></tr>");
+        //content.append("<tr><th align=\"center\">平台表最小时间</th><td align=\"center\">" + dysaleMinimumTimeCount + "</td></tr>");
         content.append("&nbsp;&nbsp;&nbsp;");
         content.append("</body></html>");
 
