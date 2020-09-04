@@ -17,6 +17,7 @@ import java.util.*;
 
 import static com.tester.utils.DateUtils.PATTERN_DAY;
 import static com.tester.utils.OhMyEmail.SMTP_QQ;
+import static com.tester.utils.OhMyEmail.SMTP_163;
 
 
 @RunWith(SpringRunner.class)
@@ -31,7 +32,7 @@ public class EmailTest {
     public void before() throws GeneralSecurityException {
 
 
-        OhMyEmail.config(SMTP_QQ(false), "yaokai@kanda-data.com", "join7Kc2KkWnpTbH");
+        OhMyEmail.config(SMTP_163(false), "13750856517@163.com", "VPAUITGNHJFNRVLN");
 
 
     }
@@ -72,7 +73,7 @@ public class EmailTest {
         String jdsale = null;
         Integer jdsaleTwoDayCount = testResultDao.jdsaleTwoDayCount(jdsale);
         String jdsaleMinimumTimeCount = testResultDao.jdsaleMinimumTimeCount(jdsale);
-        Integer jdsaleThreeDayCount = testResultDao.tbsaleThreeDayCount(jdsale);
+        Integer jdsaleThreeDayCount = testResultDao.jdsaleThreeDayCount(jdsale);
         double jdsaledouble = 1.0 * (jdsaleTwoDayCount - jdsaleThreeDayCount) / jdsaleThreeDayCount * 100;
         Double jdsaleMoMCount = Double.valueOf(String.format("%.2f", jdsaledouble));
         System.out.println(jdsaleMoMCount);

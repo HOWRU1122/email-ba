@@ -1,4 +1,4 @@
-2020-09-03 09:36:26.558 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+2020-09-04 09:25:22.829 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -7,19 +7,19 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2020-09-03 09:36:36.596 [main] INFO  com.tester.cases.EmailTest - Starting EmailTest on Antetokounmpo.local with PID 1502 (started by yaokai in /Users/yaokai/IdeaProjects/email-ba)
-2020-09-03 09:36:36.597 [main] INFO  com.tester.cases.EmailTest - No active profile set, falling back to default profiles: default
-2020-09-03 09:36:36.648 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Thu Sep 03 09:36:36 CST 2020]; root of context hierarchy
-2020-09-03 09:36:37.037 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester.dao]' package. Please check your configuration.
-2020-09-03 09:36:37.152 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester]' package. Please check your configuration.
-2020-09-03 09:36:37.910 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-09-03 09:36:38.140 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Thu Sep 03 09:36:36 CST 2020]; root of context hierarchy
-2020-09-03 09:36:38.227 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-09-03 09:36:38.228 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-09-03 09:36:38.262 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-09-03 09:36:38.262 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-09-03 09:36:43.716 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-2020-09-03 09:36:43.750 [cluster-ClusterId{value='5f5048ababd6c005de5d7645', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+2020-09-04 09:25:32.850 [main] INFO  com.tester.cases.EmailTest - Starting EmailTest on Antetokounmpo.local with PID 1828 (started by yaokai in /Users/yaokai/IdeaProjects/email-ba)
+2020-09-04 09:25:32.851 [main] INFO  com.tester.cases.EmailTest - No active profile set, falling back to default profiles: default
+2020-09-04 09:25:32.881 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Fri Sep 04 09:25:32 CST 2020]; root of context hierarchy
+2020-09-04 09:25:33.206 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester.dao]' package. Please check your configuration.
+2020-09-04 09:25:33.298 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester]' package. Please check your configuration.
+2020-09-04 09:25:34.055 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:25:34.254 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Fri Sep 04 09:25:32 CST 2020]; root of context hierarchy
+2020-09-04 09:25:34.348 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-04 09:25:34.350 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-04 09:25:34.381 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:25:34.381 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:25:39.784 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-04 09:25:39.810 [cluster-ClusterId{value='5f51979335c5c0072421b605', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
 com.mongodb.MongoSocketOpenException: Exception opening socket
 	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
 	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
@@ -35,9 +35,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
 	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
 	... 3 common frames omitted
-2020-09-03 09:36:43.916 [main] INFO  com.tester.cases.EmailTest - Started EmailTest in 27.887 seconds (JVM running for 29.005)
-2020-09-03 09:37:03.536 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Thu Sep 03 09:36:36 CST 2020]; root of context hierarchy
-2020-09-03 10:58:21.843 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+2020-09-04 09:25:39.925 [main] INFO  com.tester.cases.EmailTest - Started EmailTest in 27.583 seconds (JVM running for 28.619)
+2020-09-04 09:28:03.222 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -46,19 +45,19 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2020-09-03 10:58:31.871 [main] INFO  com.tester.cases.EmailTest - Starting EmailTest on Antetokounmpo.local with PID 2332 (started by yaokai in /Users/yaokai/IdeaProjects/email-ba)
-2020-09-03 10:58:31.872 [main] INFO  com.tester.cases.EmailTest - No active profile set, falling back to default profiles: default
-2020-09-03 10:58:31.916 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Thu Sep 03 10:58:31 CST 2020]; root of context hierarchy
-2020-09-03 10:58:32.324 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester.dao]' package. Please check your configuration.
-2020-09-03 10:58:32.444 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester]' package. Please check your configuration.
-2020-09-03 10:58:33.411 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-09-03 10:58:33.685 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Thu Sep 03 10:58:31 CST 2020]; root of context hierarchy
-2020-09-03 10:58:33.783 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-09-03 10:58:33.784 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-09-03 10:58:33.815 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-09-03 10:58:33.816 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-09-03 10:58:39.331 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-2020-09-03 10:58:39.366 [cluster-ClusterId{value='5f505bdfabd6c0091c14679a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+2020-09-04 09:28:13.246 [main] INFO  com.tester.cases.EmailTest - Starting EmailTest on Antetokounmpo.local with PID 1850 (started by yaokai in /Users/yaokai/IdeaProjects/email-ba)
+2020-09-04 09:28:13.247 [main] INFO  com.tester.cases.EmailTest - No active profile set, falling back to default profiles: default
+2020-09-04 09:28:13.278 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Fri Sep 04 09:28:13 CST 2020]; root of context hierarchy
+2020-09-04 09:28:13.598 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester.dao]' package. Please check your configuration.
+2020-09-04 09:28:13.698 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester]' package. Please check your configuration.
+2020-09-04 09:28:14.468 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:28:14.689 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Fri Sep 04 09:28:13 CST 2020]; root of context hierarchy
+2020-09-04 09:28:14.766 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-04 09:28:14.767 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-04 09:28:14.800 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:28:14.801 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:28:20.205 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-04 09:28:20.231 [cluster-ClusterId{value='5f51983435c5c0073aca8b31', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
 com.mongodb.MongoSocketOpenException: Exception opening socket
 	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
 	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
@@ -74,5 +73,81 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
 	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
 	... 3 common frames omitted
-2020-09-03 10:58:39.491 [main] INFO  com.tester.cases.EmailTest - Started EmailTest in 28.155 seconds (JVM running for 29.092)
-2020-09-03 10:58:54.908 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Thu Sep 03 10:58:31 CST 2020]; root of context hierarchy
+2020-09-04 09:28:20.353 [main] INFO  com.tester.cases.EmailTest - Started EmailTest in 27.591 seconds (JVM running for 28.445)
+2020-09-04 09:35:06.749 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-09-04 09:35:16.779 [main] INFO  com.tester.cases.EmailTest - Starting EmailTest on Antetokounmpo.local with PID 1912 (started by yaokai in /Users/yaokai/IdeaProjects/email-ba)
+2020-09-04 09:35:16.780 [main] INFO  com.tester.cases.EmailTest - No active profile set, falling back to default profiles: default
+2020-09-04 09:35:16.828 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@72d6b3ba: startup date [Fri Sep 04 09:35:16 CST 2020]; root of context hierarchy
+2020-09-04 09:35:17.221 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester.dao]' package. Please check your configuration.
+2020-09-04 09:35:17.343 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester]' package. Please check your configuration.
+2020-09-04 09:35:18.157 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:35:18.392 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@72d6b3ba: startup date [Fri Sep 04 09:35:16 CST 2020]; root of context hierarchy
+2020-09-04 09:35:18.497 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-04 09:35:18.499 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-04 09:35:18.530 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:35:18.530 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:35:24.001 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-04 09:35:24.037 [cluster-ClusterId{value='5f5199db35c5c00778ccc2dd', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-09-04 09:35:24.144 [main] INFO  com.tester.cases.EmailTest - Started EmailTest in 27.927 seconds (JVM running for 28.918)
+2020-09-04 09:35:37.921 [Thread-2] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@72d6b3ba: startup date [Fri Sep 04 09:35:16 CST 2020]; root of context hierarchy
+2020-09-04 09:38:41.427 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class
+	jar:file:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-09-04 09:38:51.448 [main] INFO  com.tester.cases.EmailTest - Starting EmailTest on Antetokounmpo.local with PID 1945 (started by yaokai in /Users/yaokai/IdeaProjects/email-ba)
+2020-09-04 09:38:51.449 [main] INFO  com.tester.cases.EmailTest - No active profile set, falling back to default profiles: default
+2020-09-04 09:38:51.479 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Fri Sep 04 09:38:51 CST 2020]; root of context hierarchy
+2020-09-04 09:38:51.796 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester.dao]' package. Please check your configuration.
+2020-09-04 09:38:51.888 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.tester]' package. Please check your configuration.
+2020-09-04 09:38:52.643 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:38:52.860 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1787f2a0: startup date [Fri Sep 04 09:38:51 CST 2020]; root of context hierarchy
+2020-09-04 09:38:52.947 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-04 09:38:52.949 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-04 09:38:52.982 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:38:52.983 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-04 09:38:58.398 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-04 09:38:58.424 [cluster-ClusterId{value='5f519ab235c5c00799499d2d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+2020-09-04 09:38:58.541 [main] INFO  com.tester.cases.EmailTest - Started EmailTest in 27.597 seconds (JVM running for 28.448)
